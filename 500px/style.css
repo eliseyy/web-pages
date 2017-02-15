@@ -1,0 +1,635 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:#525558 ;
+}
+a:hover{
+    color: cornflowerblue;
+}
+li{
+    list-style: none;
+}
+h1 {
+    font-size: 36px;
+    font-weight: normal;
+    color: #525558;
+}
+h2 {
+    font-size: 24px;
+    color: #71767a;
+    font-weight: normal;
+}
+header{
+    background-color:#fff;
+    height: 50px;
+    width: 100%;
+    font-size: 14px;
+    display: inline-block;
+}
+header .logo img{
+    width:80px;
+    height:auto;
+    margin:15px 0 15px 30px;
+    display: inline-block;
+}
+header .logo{
+    width:10%;
+    float:left;
+}
+header .nav{
+    width:90%;
+    float:left;
+    height:50px;
+    padding:18px 0;
+}
+header .left-nav{
+    display: inline-block;
+}
+header .left-nav a{
+    margin-left:20px;
+}
+header .right-nav{
+    display: inline-block;
+    float:right;
+}
+header .right-nav a{
+    margin-right:50px;
+    padding: 18px 20px;
+}
+header .right-nav .active{
+    background-color: #34bf49;
+    color: #fff;
+}
+section .get-started{
+    background: url(imgs/home_cover.jpg)no-repeat center;
+    background-size: cover;
+    width:100%;
+    height: calc(100vh - 149px);
+    position:relative;
+}
+section .get-started .text{
+    padding-top: 30px;
+    text-align: center;
+    position: relative;
+    color:#fff;
+    text-shadow: 0 0 1px rgba(0,0,0,0.6);
+}
+section .get-started .text h1{
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    padding-top:20px;
+    color:#fff;
+}
+section .get-started .text h2{
+    color:#fff;
+    margin-bottom: 60px;
+    text-shadow: 0 0 1px rgba(0,0,0,0.6);
+}
+section .get-started .text .btn{
+    border-radius: 3px;
+    background-color: #0099e5;
+    color:#fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    padding:10px 30px;
+}
+section .get-started .downloads{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+section  .downloads img{
+    width:135px;
+    height:40px;
+}
+section .get-started .credits{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    text-align: right;
+}
+section .get-started .credits span{
+    display: table;
+}
+section .get-started .credits a {
+    color:#fff;
+    font-weight: bolder;
+}
+section .get-started .scroll-arrow img{
+    position: absolute;
+    left:50%;
+    bottom: 10px;
+    width: 31px;
+    height: 19px;
+    opacity: 0.5;
+}
+section .split-container{
+    position: relative;
+    border-bottom: 1px solid #eeeff2;
+}
+section .split-container div{
+    display: inline-block;
+}
+section .split-container .split{
+    min-height: 150px;
+    margin: 0 auto;
+    line-height: 1.4em;
+    display: table;
+}
+section .split-container .split .user{
+    padding: 25px 0 55px 150px;
+    width: 500px;
+    text-align: left;
+    position: relative;
+}
+section .split-container .split h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+section .split-container .split a{
+    color: #fff;
+    padding:10px 20px;
+    background-color: #0099e5;
+}
+section .split-container .split p{
+    margin-bottom:25px;
+}
+section .split-container .split .photographer{
+    border-right:1px solid #eeeff2;
+}
+section .split-container .split .photographer .icon{
+    background: url(imgs/camera_2x-ac.png);
+    width: 32px;
+    height: 24px;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    background-position: center;
+    background-size: cover;
+}
+section .split-container .split .publisher .icon{
+    background: url(imgs/search_2x.png);
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    background-position: center;
+    background-size: cover;
+}
+section .app{
+    border-bottom: 1px solid #eeeff2;
+    min-height: 600px;
+    height: 67vh;
+    display: inline-block;
+    width: 100%;
+    overflow-y: hidden;
+}
+section .app .wrap{
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+    width: 1050px;
+    overflow-y:hidden;
+}
+section .app .iphone-wrap{
+    width:50%;
+    float:left;
+}
+section .app .iphone-wrap .body{
+    width: 413px;
+    height: 833px;
+    background-color: #fff;
+    border: 3px solid #b9c1c7;
+    border-radius: 50px;
+    text-align: center;
+    display: block;
+    position:absolute;
+    top:0;
+    left:35px;
+    z-index: -1;
+}
+section .app .iphone-wrap .body .sensor{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #525558;
+    display: block;
+    margin: 10px auto;
+}
+section .app .iphone-wrap .body .camera{
+    width:12px;
+    height: 12px;
+    border-radius:12px;
+    background-color: #525558;
+    position: relative;
+    top: 4px;
+    left:-35px;
+    display: inline-block;
+}
+section .app .iphone-wrap .body .speaker{
+    width: 60px;
+    height: 4px;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: #525558;
+    margin:0 auto;
+    margin-left:-20px;
+}
+section .app .iphone-wrap .nub{
+    width: 10px;
+    background-color: #fff;
+    border: 3px solid #b9c1c7;
+    border-radius: 6px;
+    position: absolute;
+    left:28px;
+}
+section .app .iphone-wrap .switch{
+    height: 40px;
+    top: 80px;
+}
+section .app .iphone-wrap .up{
+    height: 60px;
+    top:153px;
+}
+section .app .iphone-wrap .down{
+    height: 60px;
+    top:223px;
+}
+section .app .iphone-wrap .sleep{
+    height: 60px;
+    top:153px;
+    left:445px;
+}
+section .app .iphone-wrap .outline{
+    border: 3px solid #000;
+    border-radius: 3px;
+    width: 381px;
+    height: 673px;
+    display: block;
+    margin-top:70px;
+}
+section .app .text-wrap{
+    width:50%;
+    float:left;
+}
+section .app .iphone-wrap .screen img{
+    width: 375px;
+}
+
+section .app .text-wrap h2{
+    font-size: 36px;
+    margin-bottom: 23px;
+    line-height: 1.2em;
+    color: #525558;
+}
+section .app .text-wrap h4{
+    font-size: 18px;
+    max-width: 500px;
+    color: #525558;
+    font-weight: normal;
+}
+section .app .downloads{
+    margin-top:40px;
+}
+section .plans{
+    width:100%;
+    position: relative;
+    background-color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+section .plans h2{
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1.4em;
+    color: black;
+    margin-bottom: 20px;
+}
+section .plans h4{
+    font-size: 18px;
+    max-width: 500px;
+    margin: 0 auto;
+    color: #525558;
+    font-weight: normal;
+    line-height: 1.4em;
+}
+section .plans-details{
+    position: relative;
+    max-width:1220px;
+    margin:0 auto;
+    padding-bottom:100px;
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px rgba(0,0,0,0.05) solid;
+}
+section .plans-details .plan{
+    float: left;
+    width: 265px;
+    margin: 40px 20px 0 20px;
+}
+section .plans-details .plan .title{
+    padding: 20px 25px 21px 25px;
+    text-align: center;
+    display: inline-block;
+    text-transform: none;
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+    line-height: 22px;
+    min-height: 215px;
+}
+section .plans-details .plan .title h3{
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+}
+section .plans-details .plan .title .price{
+    color: #fff;
+    font-weight: normal;
+    height:100%;
+    padding-top:2em;
+    display: block;
+}
+section .plans-details .plan .title .price em{
+    font-size: 14px;
+    color: rgba(0,0,0,0.6);
+    font-family: "Times", serif;
+    display: block;
+    margin-bottom: -4px;
+    font-weight: normal;
+}
+section .plans-details .plan.adobe .price em{
+    color: #71767a;
+}
+
+section .plans-details .plan .title .price em:first-of-type{
+    padding-top: 10px;
+}
+section .plans-details .free .title,section .plans-details .free .button{
+    background-color: #b9c1c7;
+}
+section .plans-details .plus .title,section .plans-details .plus .button{
+     background-color: #34bf49;
+ }
+section .plans-details .awesome .title,section .plans-details .awesome .button{
+    background-color:#0099e5;
+    border-radius: 0;
+}
+section .plans-details .adobe .title,section .plans-details .adobe .button{
+    background-color: black;
+}
+section .plans-details .button{
+    color: #fff;
+    padding:15px 80px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+section .plans-details  li:first-child{
+    text-align: center;
+
+}
+section .plans-details  li{
+    border: 1px solid #eeeff2;
+    border-top: none;
+    font-size: 16px;
+    padding: 16px 20px 18px 20px;
+    text-align: left;
+}
+section .plans-details .awesome .callout{
+    background-color: #0099e5;
+    border-radius: 3px 3px 0 0;
+    text-align: center;
+    color:#fff;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-top: -30px;
+}
+section .plans-details .price span:first-child{
+    font-size: 20px;
+
+}
+section .plans-details .dollar{
+    font-size: 90px;
+}
+section .plans-details .features p{
+    padding-top: 5px;
+    color: #777777;
+    line-height: 1.4em;
+    font-weight: normal;
+    font-size: 14px;
+}
+section .plans-details .plus li.highlight{
+    background-color: #EAF7ED;
+    border-bottom: 1px rgba(0,0,0,0.05) solid;
+}
+section .plans-details .plus li.highlight strong{
+    color: #076F18;
+    font-size: 16px;
+}
+section .plans-details .plus li.highlight strong:before{
+    content: "";
+    display: inline-block;
+    margin-right: 5px;
+    width:15px;
+    height:12px;
+    background: url(imgs/upgrade.png)no-repeat -184px -26px;
+}
+section .plans-details .awesome li.highlight strong:before{
+    content: "";
+    display: inline-block;
+    margin-right: 5px;
+    width:15px;
+    height:12px;
+    background: url(imgs/upgrade.png)no-repeat -146px -26px;
+}
+section .plans-details .awesome li.highlight{
+    background-color: #E4F5FC;
+    border-bottom: 1px rgba(0,0,0,0.05) solid;
+}
+section .plans-details .awesome li .learn-more{
+    padding: 2px 5px;
+    background-color: #ABB6BA;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 10px;
+    text-align: center;
+}
+section .plans-details .brand .logo {
+    display: inline-block;
+    width:44px;
+    height:60px;
+    background: url(imgs/upgrade.png)no-repeat -50px -2px;
+}
+section .plans-details .photoshop .logo {
+    display: inline-block;
+    width:44px;
+    height:60px;
+    background: url(imgs/upgrade.png)no-repeat -98px -10px;
+}
+section .plans-details .lightroom .logo {
+    display: inline-block;
+    width:44px;
+    height:60px;
+    background: url(imgs/upgrade.png)no-repeat -2px -10px;
+}
+section .plans-details .features .left{
+    display: inline-block;
+    width: 169px;
+    padding-left:5px;
+}
+section .text-wrap{
+    text-align: center;
+    padding: 88px 10px 94px;
+}
+section .text-wrap h2{
+    color:#000;
+    font-weight: normal;
+    line-height: 1.4em;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+section .text-wrap h4{
+    font-size: 18px;
+    max-width: 500px;
+    margin: 0 auto;
+    color: #525558;
+    font-weight: normal;
+    line-height: 1.4em;
+}
+section .tab-wrapper{
+    border-bottom: 1px solid #eeeff2;
+    max-width: 1200px;
+    margin:0 auto;
+    text-align: center;
+}
+section .tab-wrapper li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+section .tab-wrapper li.active>a{
+    color: #0099e5;
+    border-bottom: 2px solid #0099e5;
+    padding-bottom:10px;
+}
+section .photo-container{
+    background: #f7f8fa;
+    padding-bottom: 65px;
+}
+section .photo-container .photo-grid{
+    padding: 35px 10px 50px 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+section .photo-container .photo-grid .row{
+    margin-bottom:8px;
+}
+section .photo-container .buttons{
+    text-align: center;
+}
+
+section .photo-container .buttons .button{
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 20px;
+    border-radius: 3px;
+    border: 1px solid #0088cc;
+}
+section .photo-container .buttons .large{
+    min-width: 250px;
+    height: 50px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 20px;
+}
+section .photo-container .buttons .submit{
+    background-color: #34bf49;
+    color: #fff;
+    border-color: #2fab41;
+    text-shadow: 0px 1px 0px #2fab41;
+}
+section .photo-container .buttons .submit:hover{
+    background-color: #2fab41;
+}
+section .photo-container .buttons .tertiary{
+    background-color: #fff;
+    border-color:rgba(185,193,199,0.5);
+    color: #71767a;
+    margin-left:10px;
+}
+section .photo-container .buttons .tertiary:hover{
+    background: #f7f8fa;
+}
+footer{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 40px 10px;
+}
+footer div{
+    display: inline-block;
+    vertical-align: top;
+    margin-right:30px;
+}
+footer .down-logo img{
+    width: 80px;
+    height: auto;
+}
+footer .down-logo{
+    width:100px;
+}
+footer .about{
+    width:350px;
+}
+
+footer .community{
+    width:90px;
+}
+footer .px{
+    width:100px;
+ }
+footer .media{
+    width:100px;
+}
+footer .download{
+    width:240px;
+}
+footer h3{
+    color: #525558;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+footer p{
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #525558;
+}
+footer p.little{
+    color: #71767a;
+    font-size: 12px;
+    margin-top:2em;
+}
+footer .links li{
+    color: #525558;
+    margin-bottom:10px;
+    font-size: 14px;
+}
+footer .links li img{
+    height: 40px;
+    width: auto;
+}
